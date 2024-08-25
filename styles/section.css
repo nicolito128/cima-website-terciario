@@ -41,3 +41,18 @@ footer{
   left: 0;
   width: 100%;
 }
+.container input{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.saludo{
+    color: rgba(128, 128, 128, 0.664);
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 10px;
+}
