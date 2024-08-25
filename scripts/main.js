@@ -15,6 +15,3 @@ $('#submit-btn')?.addEventListener('click', function (event) {
     link.href = `/pages/${section}.html`
     link.click()
 })
-
-$('#userNameSpan')?.value = username
-$('#sectionNameSpan')?.value = sectionName
