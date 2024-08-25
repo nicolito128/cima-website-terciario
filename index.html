@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIMA - Sistema de Gestión de Institucional</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <main role="main">
+        <section class="left">
+            <form>
+                <div class="form-option">
+                    <label for="area-selector">Área</label>
+                    <select name="area-selector" id="area-selector">
+                        <option value="">--Por favor, elige un área--</option>
+                        <option value="administracion">Administración</option>
+                        <option value="guardia">Guardia</option>
+                        <option value="gerencia">Generencia</option>
+                        <option value="farmacia">Farmacia</option>
+                        <option value="doctores">Doctores</option>
+                    </select>
+                </div>
+    
+                <div class="form-option">
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" name="username" id="username" class="input" placeholder="Ingrese nombre de usuario">
+                </div>
+    
+                <div class="form-option">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" name="password" id="password" class="input" placeholder="Ingrese la contraseña">
+                </div>
+    
+                <div class="form-option">
+                    <button type="submit" id="submit-btn">Iniciar sesión</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="right">
+            <div class="logo-container">
+                <img src="images/logo4.png" alt="cima logo" class="logo">
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
