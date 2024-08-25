@@ -47,9 +47,9 @@ main {
             }
 
             & .form-option select {
-                background-color: var(--main-bg-color);
-                padding: 5px;
-                border: none;
+                background-color: rgba(255, 255, 255, 0.2);
+                padding: 7px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
                 border-radius: 4px;
             }
 
@@ -79,10 +79,9 @@ main {
                 background-color: var(--main-bg-color);
                 background: linear-gradient(
                     to right top,
-                    var(--main-bg-color),
-                    rgb(235, 235, 235),
-                    rgb(200, 200, 200),
-                    rgb(170, 170, 170)
+                    rgb(204, 214, 228) 10%,
+                    rgb(189, 207, 230) 20%,
+                    rgb(206, 218, 226) 70%
                 );
                 cursor: pointer;
                 padding: 5px;
@@ -97,9 +96,10 @@ main {
         background-color: var(--main-bg-color);
         box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
 
-        & .logo-img {
+        & .logo {
             width: 250px;
             height: 250px;
+            scale: 2;
         }
     }
 }
