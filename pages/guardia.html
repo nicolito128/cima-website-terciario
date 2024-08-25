@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIMA - Guardia</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/section.css">
+</head>
+<body>
+    <header>
+        <img src="../images/logo4.png" alt="cima logo">
+    </header>
+    <section>
+        <h2>
+            Estas en Guardia
+        <h2>
+        <div>
+            <p>Ingrese DNI del paciente para consultar los datos</p>
+            <input type="text">
+            <button id="boton">Consultar</button>
+        </div>
+        
+    </section>
+
+    <footer> <!-- GÜI -->
+        <p>
+            GÜI © Copyrigth. Todos los derechos reservados.
+        </p>
+    </footer>
+    
+    <script>
+        const boton = document.getElementById('boton');
+    
+        boton.addEventListener('click', () => {
+          boton.textContent = 'Cargando...';
+        });
+      </script>
+</body>
+</html>

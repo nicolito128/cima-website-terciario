@@ -1,0 +1,22 @@
+/* Esto define variables globales que pueden reutilizarse en otros estilos */
+:root {
+    --main-bg-color: #F8F8F8;
+    --main-color: rgb(46, 168, 255);
+    --main-color-80p: rgba(46, 168, 255, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13pt;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-bg-color);
+    width: 100vw;
+    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+}

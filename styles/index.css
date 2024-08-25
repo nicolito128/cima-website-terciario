@@ -1,0 +1,105 @@
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    & section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & section.left {
+        position: relative;
+        background-color: var(--main-bg-color);
+        background: linear-gradient(
+            to left top,
+            rgb(0, 105, 255) 25%,
+            var(--main-color) 75%
+        );
+        padding: 15%;
+
+        & form {
+            border-left: 3px solid rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            padding: 5px;
+
+            & .form-option {
+                padding: 10px;
+            }
+
+            & .form-option {
+                margin-bottom: 10px;
+            }
+
+            & .form-option label {
+                display: block;
+                padding: 5px;
+                padding-right: 20px;
+                margin-bottom: 10px;
+            }
+
+            & .form-option select {
+                background-color: var(--main-bg-color);
+                padding: 5px;
+                border: none;
+                border-radius: 4px;
+            }
+
+            & .form-option input {
+                background-color: rgb(27, 138, 216);
+                display: block;
+                background: none;
+                border: none;
+                border-bottom: 1px solid #fff;
+                padding: 5px;
+                min-width: 300px;
+
+                &:focus {
+                    background-color: rgb(27, 138, 216);
+                    outline: none;
+                }
+
+                &:active {
+                    outline: none;
+                }
+            }
+
+            & .form-option button {
+                color:  #111;
+                border-radius: 5.5px;
+                border: none;
+                background-color: var(--main-bg-color);
+                background: linear-gradient(
+                    to right top,
+                    var(--main-bg-color),
+                    rgb(235, 235, 235),
+                    rgb(200, 200, 200),
+                    rgb(170, 170, 170)
+                );
+                cursor: pointer;
+                padding: 5px;
+                min-width: 300px;
+            }
+        }
+    }
+
+    & section.right {
+        width: 100%;
+        position: relative;
+        background-color: var(--main-bg-color);
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35);
+
+        & .logo-img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+
+footer {
+    /*background-color: var(--main-color);*/
+    padding: 20px;
+    text-align: center;
+}
